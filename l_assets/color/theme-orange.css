@@ -1,0 +1,166 @@
+/*!
+Author       : Bestwebcreator.
+Template Name: Cryptoking - Bitcoin & ICO Cryptocurrency Landing Page HTML Template
+Version      : 1.5
+*/
+
+button,
+.btn-default,
+.gradient_box,
+.roadmap.gradient_box:before,
+.roadmap_icon.icon_gradient_box::before,
+.newsletter_form .outline_input,
+.progress-bar {
+	background: -webkit-linear-gradient(left, rgba(238,168,73,1) 0%,rgba(244,107,69,1) 99%);
+	background: linear-gradient(to right, rgba(238,168,73,1) 0%,rgba(244,107,69,1) 99%);
+}
+
+.btn-default::before,
+.btn-default.active.focus, 
+.btn-default.active:focus, 
+.btn-default.active:hover, 
+.btn-default:active:focus, 
+.btn-default:active:hover,
+.btn-default.active,
+.btn-default:active,
+.btn-default.focus:active, 
+.btn-default:focus,
+.btn.active:not(:disabled):not(.disabled), 
+.btn:active:not(:disabled):not(.disabled),
+.social_team a::before,
+.mfp-bg,
+.v_blue .mfp-bg,
+.v_dark .mfp-bg,
+.v_dark_light .mfp-bg {
+	background: -webkit-linear-gradient(left, rgba(244,107,69,1) 0%,rgba(238,168,73,1) 99%);
+	background: linear-gradient(to right, rgba(244,107,69,1) 0%,rgba(238,168,73,1) 99%);
+}
+.gradient_box.roadmap_inner::after,
+.gradient_box.roadmap_inner::before {
+	background: -webkit-linear-gradient(top, rgba(238,168,73,1) 0%,rgba(244,107,69,1) 99%);
+	background: linear-gradient(to bottom, rgba(238,168,73,1) 0%,rgba(244,107,69,1) 99%);
+}
+
+.team_info,
+.faq_content .card-header a,
+.faq_content .card,
+.roadmap_inner,
+.roadmap::before,
+.roadmap_inner::before,
+.roadmap_inner::after,
+.roadmap .owl-nav i,
+.roadmap_icon::before,
+.social_team a,
+.footer_social li a:hover,
+.v_blue .roadmap_inner::before, 
+.v_blue .roadmap_inner::after, 
+.v_blue .roadmap::before, 
+.v_blue .roadmap_inner, 
+.v_blue .roadmap .owl-nav i,
+.v_blue .team_info,
+.v_blue .faq_content .card, 
+.v_blue .faq_content .card-header a,
+.v_dark .roadmap_inner::before, 
+.v_dark .roadmap_inner::after, 
+.v_dark .roadmap::before, 
+.v_dark .roadmap_inner, 
+.v_dark .roadmap .owl-nav i,
+.v_dark .team_info,
+.v_dark .faq_content .card, 
+.v_dark .faq_content .card-header a,
+.v_dark_light .roadmap_inner::before, 
+.v_dark_light .roadmap_inner::after, 
+.v_dark_light .roadmap::before, 
+.v_dark_light .roadmap_inner, 
+.v_dark_light .roadmap .owl-nav i,
+.v_dark_light .team_info,
+.v_dark_light .faq_content .card, 
+.v_dark_light .faq_content .card-header a,
+.v_light .roadmap_inner::before, 
+.v_light .roadmap_inner::after, 
+.v_light .roadmap::before, 
+.v_light .roadmap_inner, 
+.v_light .roadmap .owl-nav i,
+.v_light .team_info,
+.v_light .faq_content .card, 
+.v_light .faq_content .card-header a,
+.v_light .footer_social li a:hover {
+	background-color: #f46b45;
+}
+.roadmap .owl-nav .disabled i {
+	background-color: #ce8829;
+	color: #ffffff;
+}
+.btn span {
+	color: #eea849;
+}
+.btn:hover span,
+header a:hover, 
+.navbar-nav li a.active,
+.v_light header a:hover, 
+.v_light .navbar-nav li a.active,
+.banner_text h1 span,
+.box_inner i,
+.social_single_team li a,
+.contact_detail span,
+.footer_menu li a:hover, 
+.footer_link a:hover,
+.blog_title a:hover,
+.v_blue .blog_title a:hover,
+.v_dark .blog_title a:hover,
+.v_dark_light .blog_title a:hover,
+.blog_meta li a:hover,
+.v_blue .blog_meta li a:hover,
+.v_dark .blog_meta li a:hover,
+.v_dark_light .blog_meta li a:hover,
+.blog_content a:hover,
+.v_blue .blog_content a:hover,
+.v_dark .blog_content a:hover,
+.v_dark_light .blog_content a:hover,
+.widget_category li a:hover, 
+.widget_archive li a:hover,
+.widget-post-content a:hover,
+.tags li a:hover,
+.v_blue .widget_category li a:hover, 
+.v_blue .widget_archive li a:hover,
+.v_blue .widget-post-content h6 a:hover,
+.v_blue .tags li a:hover,
+.v_dark .widget_category li a:hover, 
+.v_dark .widget_archive li a:hover,
+.v_dark .widget-post-content h6 a:hover,
+.v_dark .tags li a:hover,
+.v_dark_light .widget_category li a:hover, 
+.v_dark_light .widget_archive li a:hover,
+.v_dark_light .widget-post-content h6 a:hover,
+.v_dark_light .tags li a:hover,
+.meta_data a:hover,
+.comment-reply:hover,
+.v_blue .meta_data a:hover,
+.v_blue .comment-reply:hover,
+.v_dark .meta_data a:hover,
+.v_dark .comment-reply:hover,
+.v_dark_light .meta_data a:hover,
+.v_dark_light .comment-reply:hover,
+.forgot_pass:hover,
+.authorize_form a:hover,
+.v_blue .forgot_pass:hover,
+.v_blue .authorize_form .form-group span a:hover,
+.v_dark .forgot_pass:hover,
+.v_dark .authorize_form .form-group span a:hover,
+.v_dark_light .forgot_pass:hover,
+.v_dark_light .authorize_form .form-group span a:hover,
+.tm_date,
+.app_feature i,
+.team_content h5 a,
+.team_social li a:hover,
+.app_btn li a:hover span {
+	color: #f46b45;
+}
+
+.tags li a:hover,
+.v_blue .tags li a:hover,
+.v_dark .tags li a:hover,
+.v_dark_light .tags li a:hover,
+.doc_box {
+	border-color: #f46b45;
+}

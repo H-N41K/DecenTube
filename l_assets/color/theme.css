@@ -1,0 +1,70 @@
+/*!
+Author       : Bestwebcreator.
+Template Name: Landing Page
+Version      : 1.0
+*/
+
+.btn,
+.btn-default,
+.gradient_box,
+.roadmap.gradient_box:before,
+.roadmap.gradient_box:before,
+.roadmap_icon.icon_gradient_box::before,
+.newsletter_form .outline_input {
+	background: -webkit-linear-gradient(left, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to right, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.btn-default::before,
+.social_team a::before {
+	background: -webkit-linear-gradient(left, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+    background: linear-gradient(to right, rgba(37,184,213,1) 0%,rgba(117,88,165,1) 99%);
+}
+
+.gradient_box.roadmap_inner::after,
+.gradient_box.roadmap_inner::before  {
+	background: -webkit-linear-gradient(top, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+	background: linear-gradient(to bottom, rgba(117,88,165,1) 0%,rgba(37,184,213,1) 99%);
+}
+
+.team_info,
+.faq_content .card-header a,
+.faq_content .card,
+.roadmap_inner,
+.roadmap::before,
+.roadmap_inner::before,
+.roadmap_inner::after,
+.roadmap .owl-nav i,
+.roadmap_icon::before,
+.social_team a,
+.footer_social li a:hover,
+.v_light .roadmap_inner::before, 
+.v_light .roadmap_inner::after, 
+.v_light .roadmap::before, 
+.v_light .roadmap_inner, 
+.v_light .roadmap .owl-nav i,
+.v_light .team_info,
+.v_light .faq_content .card, 
+.v_light .faq_content .card-header a,
+.v_light .footer_social li a:hover  {
+	background-color: #26b6d4;
+}
+.roadmap .owl-nav .disabled i {
+	background-color: #1c88bd;
+}
+.btn span {
+	color: #7459a6;
+}
+.btn:hover span,
+header a:hover, 
+.navbar-nav li a.active,
+.v_light header a:hover, 
+.v_light .navbar-nav li a.active,
+.banner_text h1 span,
+.box_inner i,
+.social_single_team li a,
+.contact_detail span,
+.footer_menu li a:hover, 
+.footer_link a:hover {
+	color: #26b6d4;
+}

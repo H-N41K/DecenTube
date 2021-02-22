@@ -1,0 +1,16 @@
+<script>
+                $(window).bind('load',function() {
+                    video_user = $uploaderEthAddress;
+                    video_index = $videoIndex;
+            
+                    video_path_hex = window.videossharing.methods.videos_path(video_user, video_index).call();
+                    video_title_hex = window.videossharing.methods.videos_title(video_user, video_index).call();
+            
+                    video_likes = window.videossharing.methods.video_aggregate_likes(video_user, video_index).call()
+            
+                    video_title = web3.utils.toAscii(video_title_hex);
+                    video_path = web3.utils.toAscii(video_path_hex);
+                    video_url = 'http://localhost:8080/ipfs/'+ video_path;
+                    $('#videoSourceURL').attr('src', 'video_url');
+                  });
+</script>

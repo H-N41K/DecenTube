@@ -1,0 +1,4 @@
+E:\xampp\htdocs\YouTube\ffmpeg\bin\ffmpeg.exe -i E:/xampp/htdocs/YouTube/uploads/videos/5d83ca778511eLearn2Dapp_-_Converting_wETH_to_ETH_-_Episode_7.mp4 E:/xampp/htdocs/YouTube/uploads/videos/5d83ca7785ceb.mp4 2>&1
+E:\xampp\htdocs\YouTube\ffmpeg\bin\ffmpeg.exe -i E:/xampp/htdocs/YouTube/uploads/videos/test.mp4 E:/xampp/htdocs/YouTube/uploads/videos/output.mp4 2>&1
+
+ffmpeg -i input.mp4 -s 210x118 -ss 15 -t 5 output.gif

@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<style>
+
+body {
+  background: #1b1b1b;
+}
+canvas, img {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20% ;
+}
+
+canvas {
+  opacity: 1;
+  transition: opacity 1s, filter 1.5s;
+}
+
+/* .icon:hover canvas, canvas:hover, img:hover {
+  opacity: 0;
+  transition: opacity 0.5s, filter 0.25s;
+  filter: blur(1px);
+} */
+
+
+.icon {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+}
+
+</style>
+</head>
+<body>
+    <script src="blockies.js"></script>
+    <!-- <script type="text/javascript" src="hqx.js"></script> -->
+    <img src = "http://localhost/YouTube/assets/images/icons/DecenTubeLogo.png" id="img">
+    <script>
+      
+
+        var loaded = function( img ) {
+          var address = '0xcb2698186dD2fAcF6Ba99B5235fCDa606a192C80';
+            var seed = address.toLowerCase();
+            var source = blockies.create({ seed:seed ,size: 8,scale: 1});
+
+            //var icon = document.createElement("div");
+            //icon.className = "icon";
+
+            var image = document.getElementById("img");
+            image.src = blockies.create({ seed:seed ,size: 8,scale: 16}).toDataURL();
+            document.body.appendChild(image)
+            //icon.appendChild( image );
+
+            //var child = hqx(hqx(source, 4), 4);
+
+            //icon.appendChild( child );
+            // var shadow = document.createElement('div');
+            //document.body.appendChild(icon)
+          };
+    </script>
+
+</body>

@@ -1,0 +1,16 @@
+Select Server:
+        <select id='serverSelectOptions'>
+            <option value='1' >India</option>
+            <option value='2'>USA</option>
+            <option value='3'>Canada</option>
+        </select>
+        <script type='text/javascript'>
+            $(function () {
+                $('#serverSelectOptions').change(function () {
+                    getParams = getUrlVars();
+                    var id = getParams['id'];
+                    var server = $(this).val();
+                    window.location.href = window.location.origin + window.location.pathname + '?id=' + id + '&server=' + server;
+                });
+            });
+        </script>

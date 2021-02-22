@@ -1,0 +1,3 @@
+ipfs add --only-hash --quieter output.mp4
+
+ipfs pin rm QmWv2kgDbX9t8FqKFSqA6fsN7FFJgpU4Fdx72VEKxeHvYT

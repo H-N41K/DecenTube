@@ -1,0 +1,94 @@
+<head>
+        <title>DecenTube</title>
+    
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- <link href="assets/css/Font-Titillium-Web.css" rel="stylesheet"> -->
+        <link href="assets/css/Font-Product-Sans.css" rel="stylesheet">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script> 
+        <script src="assets/js/commonActions.js"></script>
+        <script src="assets/js/regenerator-runtime@0.13.3/runtime.js"></script>
+        <script src="assets/js/web3.js@1.2.1/web3.min.js"></script>
+        <script src="assets/js/blockies.js"></script>
+        
+        <script>
+      window.addEventListener('load', async () => {
+          loadWeb3();
+          loadBlockchainData();
+      });
+    
+      async function loadWeb3() {
+        // Modern dapp browsers...
+        if (window.ethereum) {
+            window.web3 = new Web3(ethereum);
+            try {
+                // Request account access if needed
+                console.log("window.ethereum");
+                ethereum.enable();
+                ethereum.autoRefreshOnNetworkChange = false;
+    
+                ethereum.on('accountsChanged', function () {
+                //location.reload();
+                });
+    
+                ethereum.on('networkChanged', function () {
+                //location.reload();
+                });
+            } catch (error) {
+                console.log(error); // User denied account access...
+            }
+        }
+        // Legacy dapp browsers...
+        else if (window.web3) {
+            window.web3 = new Web3(web3.currentProvider);
+            console.log("window.currentProvider");
+            // Acccounts always exposed
+        }
+        // Non-dapp browsers...
+        else {
+            console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+        }
+        console.log("version");
+        var version = web3.version;
+        console.log(version);
+        // var currentAccount = await web3.eth.getAccounts();
+        // console.log(currentAccount);
+      }
+    
+      async function loadBlockchainData() {
+      //Load account
+      window.currentAccount = await web3.eth.getAccounts();
+      window.currentAccount = window.currentAccount[0];
+      await loadBlockiesIcon();
+      $.getJSON( "assets/contracts/VideosSharing.json", function( json ) {
+        console.log( "JSON Data received, name is " + json.contractName);
+        window.VideosSharingContract = json;
+    });
+      window.networkId = await web3.eth.net.getId()
+        window.networkData = window.VideosSharingContract.networks[networkId];
+        if (window.networkData) {
+          window.videossharing = new web3.eth.Contract(window.VideosSharingContract.abi, window.networkData.address);
+          var currBal = await window.videossharing.methods.balanceOf(window.currentAccount).call();
+          currBal = parseInt(currBal) / 1000;
+          document.getElementsByClassName("balanceDisplay")[0].innerHTML = currBal + ' VIDCOIN';
+        } else {
+          window.alert('VideosSharing contract doesnt exist on the detected network. Please switch to Ganache Network');
+        }
+        
+      }
+    
+    async function loadBlockiesIcon() {
+                var address = window.currentAccount;
+                // if(address == undefined){
+                //     return;
+                // }
+                var seed = address.toLowerCase();
+                var source = blockies.create({ seed:seed ,size: 8,scale: 1});
+                var profilePicture = $(".profilePicture");
+                profilePicture.attr('src', blockies.create({ seed:seed ,size: 8,scale: 16}).toDataURL());
+                profilePicture.attr('style', 'width: 45px;height: 45px;border-radius: 30px;');
+      }
+    </script>
+    </head>
