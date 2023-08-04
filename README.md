@@ -40,7 +40,7 @@
 
 ### Research Paper
 
-<a href="https://perpetualinnovation.net/ojs/index.php/ijngc/article/view/606" target="blank">https://perpetualinnovation.net/ojs/index.php/ijngc/article/view/606</a>
+<a href="https://ijngc.perpetualinnovation.net/index.php/ijngc/article/view/175" target="blank">https://ijngc.perpetualinnovation.net/index.php/ijngc/article/view/175</a>
 
 ------------------------------------------
 
